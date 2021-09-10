@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 /* Body */
 body {
@@ -22,11 +23,6 @@ h4 {
     font-size: 20px;
 }
 
-/* Paragraphs */
-p {
-    font-size: 16px;
-}
-
 /* Header */
 .header {
     padding: 20px;
@@ -36,6 +32,11 @@ p {
 }
 
 .header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
     display: inline-block;
     font-size: 48px;
     color: #d9dcd6;
@@ -49,20 +50,34 @@ p {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+/* Navigation links at the top right */
+.nav {
+    float: right;
+    margin: 20px;
+    justify-content: space-between;
+}
+/* Link styling in nav and placement in header */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0px 20px 0px 20px;
+}
+
+.header ul {
+    display: flex;
+    float: right;
 }
 
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
-/* Links */
-a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0px 20px 0px 20px;
+
+/* Paragraphs */
+p {
+    font-size: 16px;
 }
+
 /* Main image of people working towards top of the page */
 .hero {
     height: 800px;
@@ -73,7 +88,13 @@ a {
     background-position: center;
 }
 
-/* First section after main */
+/* First section after main element */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
 .tools {
     margin-bottom: 20px;
     padding: 50px;
@@ -82,11 +103,10 @@ a {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/* These classes move the images to the left and right in the first section after main and set max height */
 .tools img {
     max-height: 200px;
 }
-
 
 .float-left {
     float: left;
@@ -98,13 +118,7 @@ a {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* Second section after main */
+/* Second section after main element */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -135,9 +149,3 @@ a {
     text-align: center;
 }
 
-/* Navigation links at the top right */
-.nav {
-    float: right;
-    margin: 20px;
-    justify-content: space-between;
-}
